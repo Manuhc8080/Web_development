@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color properties</title>
+    <style>
+        /* the specificity of this number is 10 */
+        h1 {
+            color: blueviolet;
+        }
+
+        /* the specificity of this number is 1 */
+        .cpurple {
+            color: red;
+
+        }
+
+        /* the specificity of this number is 10 */
+        .yellow {
+            color: rgb(15, 2, 30);
+        }
+
+        /* the specificity of this number is 10   1 +10 == 11 */
+        h1 .cred {
+            color: blue;
+        }
+
+
+        /* the specificity of this number is 10 */
+        .yellow {
+            color: red !important;
+        }
+
+        /* if u  use imortant than it will be the more preiority it also rewrit the inline css */
+
+        /* this below vlause called it as the attribute selectors we target the attribute and write the attribute in the squre braces */
+        [ data-x=a] {
+            background-color: rgb(12, 6, 73);
+        }
+
+        /* the color change according to which color is in the last position */
+        /* using cascadle algorihtm 
+4rule 
+position and order of apperence is matter
+
+id is more specific and but id is very imp specicity*/
+
+
+
+        /* inline specificity value 1000 and is we add id i will increase 10k and hard to overridee */
+
+        a.harry.rohan-class [href]:hover {
+            color: green;
+        }
+
+        /* the specificity of this number is 1+10+10++10+10 =41 */
+    </style>
+</head>
+
+<body>
+    <!-- dont use comma for multiple selectoes or calss -->
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error
+            reprehenderit
+            incidunt, ipsam voluptatem reiciendis ipsum quia repellendus iusto ab beatae quibusdam.</h1>
+    </div>
+    <!-- style="color:red"  -->
+
+    <!-- preority ranks which is first
+ attribute selector
+ id selectors
+ class selector
+ inline selector -->
+
+<!-- avoid inline css and importand attribute -->
+
+</body>
+
+</html>
