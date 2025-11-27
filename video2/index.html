@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors</title>
+
+    <style>
+        /*element selector*/
+        div {
+            background-color: aquamarine;
+        }
+
+
+
+
+        /*.red is use to target selector*/
+
+        .red {
+            background-color: rgb(29, 29, 33);
+        }
+
+        /* id selector use hash to target*/
+        #green {
+            background-color: brown;
+        }
+
+        /*child selectors*/
+
+        div > p {
+            background-color: rgb(16, 61, 100);
+        }
+
+        div p {
+            background-color: coral;
+        }
+
+        /*decendemt selector use to target child directly doest mater what comes front*/
+
+
+/*decendemt selector use to target child directly doest mater what comes front*/
+
+        div > h1{ 
+            background-color: gold
+        }
+
+
+        div h1 {
+            background-color:indianred
+        }
+
+
+        /* universal selector */
+
+        *{
+            margin:0;
+        padding:0;
+    }
+
+
+
+    /* pseudo selector to change link color after visit */
+
+a:visited{
+    color:yellowgreen
+}
+
+
+/* this is use color of not visited link */
+a:link{
+    color: cadetblue;
+}
+
+
+/* active use to change color of when we click the link */
+
+a:active
+{
+    background-color: black;
+}
+
+
+/* a:hover use to when we hover cursor it change the action */
+
+a:hover{
+    background-color: chartreuse;
+}
+
+
+/* p first child use to target first child  */
+
+p:first-child{
+    background-color: red;
+}
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <div>i am a div</div>
+
+    <div>mannuuuuuuuuuuu
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+
+
+    <div class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, minima.
+        <article>
+        <h1>this is my heading</h1>
+    </article>
+    </div>
+
+
+
+    <div id="green"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore accusantium facilis repudiandae?
+
+    </div>
+
+
+
+    <div>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto natus unde facilis vel consequuntur.
+
+            </p>
+        </article>
+    </div>
+
+
+<a href="https://www.google.com">go to google</a>
+<a href="https://www.instagram.com">instagram</a>
+
+
+
+<Div calss="one">
+    <p>Lorem ipsum dolor sit1st.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing2nd.</p>
+
+
+
+
+</Div>
+</body>
+
+</html>
