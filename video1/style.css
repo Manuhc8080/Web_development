@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(245, 240, 240);
+}
+td{
+    border:2px solid black
+}
+p{
+    background-color: red;
+}
+a{
+    background-color: green;
+}
+.manu{
+    background-color: aqua;
+}
+#second{
+    background-color: blanchedalmond;
+}
