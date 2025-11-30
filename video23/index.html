@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css displau properties</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+.box{
+    border:2px solid yellowgreen;
+    /* display:inline; */
+    display:inline-block;
+    /* if display propertiesis inline then the padding  and the msrgine not accpet and cannot accept width */
+    /* if we inline block it will accepet the padding and margin */
+    padding:45px;
+    margin: 35px;
+    width: 300px;
+display:flex;
+justify-content: center;
+display:inline-flex;
+display:inline-grid;
+
+}
+
+
+    /* DISPLAY NONE properties*/
+
+    .box1{
+        
+        display:none;
+        /* visibility: hidden; */
+    
+    
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="box box1">im a box</div>
+    <div class="box">im a man</div>
+
+    <span>im a coder</span>
+    <span>im a good boy</span>
+</body>
+</html>
