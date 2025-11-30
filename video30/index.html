@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables</title>
+    <style>
+
+
+/* variables in css          using these variable we can change any color at a time by declaring the varible*/
+
+/* root is always is use to global variable  */
+:root{
+
+--color:rgb(93, 209, 192);
+--seccolor:rgb(207, 213, 19);
+--defad:50px;
+--mrg:30px;
+--def:0.5;
+
+
+}
+
+li:first-child{
+
+    --color:cornflowerblue;      /* this is local variable declaration to use this varible individuallyy  */
+    background-color:var(--color, blue); /* this is backup variable is the  varible is not found  */
+
+}
+
+/* div:first-child*/
+*{
+
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    /* background-color: aqua; */
+    background-color: var(--color);
+}
+
+  ul li{
+
+    opacity:var(--def);
+    list-style: none;
+    --pad:200px;
+    padding: 30px;
+    margin: var(--mrg);
+    border:2px solid var(--seccolor);
+    --seccolor:rgb(4, 30, 30);
+}
+ul{
+    display:flex;
+}
+.container{
+    /* background-color: greenyellow; */
+    background-color:var(--seccolor);
+}
+
+    </style>
+</head>
+<body>
+    
+<div class="nav">
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</div>
+
+<div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam a incidunt minima repellat dolorum doloribus, quo consectetur adipisci, non facere dolore natus id. Cumque error rem illo accusamus, iusto odio, harum culpa aliquam ducimus blanditiis omnis. Omnis quia obcaecati tenetur dolorem iste, suscipit dicta beatae.</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
