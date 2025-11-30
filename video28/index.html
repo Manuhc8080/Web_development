@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css positoin property very important</title>
+    <style>
+        /* in static position we cannot do anything */
+
+
+        /* if we want to move the position tf the element or the data we must use some positon and remove it from th static mode */
+        /* we can use position right left is we add postion relative */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 433px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+
+            border: 2px solid black;
+        }
+
+        .box1 {
+            background-color: aqua;
+            /* position:sticky;
+top:0px;
+height: 151px;
+margin: 0;
+padding: 0;
+left:77px; */
+
+            position: absolute;
+            top: 0px;
+            left: 0;
+
+        }
+
+        .box2 {
+            /* position: relative; */
+            /* z index will do the elemt to the backgroung of another element */
+            top: 34px;
+            left: 56px;
+            background-color: aquamarine;
+
+
+        }
+
+        .box3 {
+
+            background-color: blueviolet;
+            /* Position:fixed;
+bottom:0px;
+left:8vw;
+height:111px; */
+
+        }
+
+        .box4 {
+
+            background-color: cadetblue;
+
+
+        }
+
+        .parent {
+            margin: 43px;
+            padding: 44px;
+            border: 2px solid black;
+            /* position:absolute;
+            top:0px;*/
+        }
+
+
+
+        /* POSIITON ABSLUTE WILL FIND THE PARENT TO ALLIGN THE ELEMET */
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <!-- transform,filter or perspective properties can also make an element appear as position
+     transform-translate()
+     filter:invert(0)
+     perspective:03em;   these are also act as a parent relative element -->
+
+
+
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+    </div>
+
+
+
+</body>
+
+</html>
