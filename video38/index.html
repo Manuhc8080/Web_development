@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+.container{
+    border:4px solid black;
+    display:flex;
+    height: 80vh;
+    /* justify-content: center; */
+    align-items:center;
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* align-content: flex-start; */
+    gap: 30px;
+    flex-flow: row wrap;
+    /* ue this for alligh wrap and direction of flow at a time use this command */
+    row-gap: 33px;
+    column-gap: 33px;
+    gap:40px 33px;
+    /* first row gap and second coloumn gap */
+}
+.item2{
+    flex-shrink:2;
+    align-self: flex-start;
+}
+.item{
+    align-self: flex-end;
+    flex-shrink: 2;
+/* flex-grow:1; */
+    /* flex-grow: 1; */
+    height:32px;
+    width: 32px;
+     border:2px solid red;
+     background-color: aqua;
+     margin: 5px;
+     justify-content: center;
+     display:flex;
+     .order-1{
+        order: 1;
+    }
+     .order-2{
+        order: 2;
+    }
+     .order-3{
+        order: 4;
+    }
+    
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item2">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item order-1">5</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        
+     
+      
+    </div>
+</body>
+</html>
