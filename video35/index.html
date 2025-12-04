@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on css selectors</title>
+    <style>
+/* .box:first-child{
+    background-color: rgb(234, 31, 31);
+} */
+ /* .boxes::first-line{
+    color: aqua;
+ } */
+
+ /* .boxes *{
+    border: 2px solid red;
+ } */
+
+p,a, .box, [data-color="primary"]{
+    padding: 45px;
+}
+/* we can make group using this */
+
+/* .box:nth-child(odd){
+    background-color: blue;
+} */
+
+
+/* .box:nth-last-child(1){
+    background-color: blueviolet;
+} */
+
+.box::before{
+    content: hy im a box;
+    color: red;
+}
+.box::first-letter{
+    color: brown;
+}
+
+input::placeholder{
+    color: blueviolet;
+}
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </div>
+        <div data-color="primary" class="box">hy im a box</div>
+        <div class="box">hy im a box</div>
+    </div>
+    <input type="text" placeholder="type your name heree">
+</body>
+</html>
