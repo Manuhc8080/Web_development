@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animation</title>
+    <style>
+.box{
+  background-color: aqua;
+    height: 44px;
+    width: 44px;
+   /* animation-name: manuanime;
+   animation-duration: 2s;
+   animation-iteration-count: 1;
+   animation-play-state:running;
+   animation-timing-function: cubic-bezier(0.16, 1.48, 0.09,-0.3); */
+   /* animation-direction: forward;  */
+   animation:manuanime 3s ease-in-out 3s 1 ,
+   manu  3s ease-in-out 1s 1 ;
+}
+.container{
+      background-color: rgb(12, 21, 117);
+    height: 80vh;
+    width: 30vw;
+}
+@keyframes manuanime{
+    from{
+transform: translateX(100px);
+background-color: aqua;
+    }
+    to{
+background-color: brown;
+    }
+}
+@keyframes manu{
+    0%{
+        transform:rotate(100deg);
+    }
+    20%{
+        transform:rotate(200deg);
+    }
+    50%{
+         transform:rotate(220deg);
+    }
+    80%{
+         transform:rotate(330deg);
+    }
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
