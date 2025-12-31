@@ -1,37 +1,37 @@
-
-function habibi(name) {
-
-    console.log("hello " + name + "you are nice")
-    console.log("hey " + name + "you tshirt isnice")
-    console.log("hey " + name + "you are good")
+function nice(name) {
+    console.log("hye" + name + "hey manu your are an developer!")
+    console.log("hye" + name + "hey manu your are an hacker!")
+    console.log("hye" + name + "hey manu your are an bussinuess man!")
+    console.log("hye" + name + "hey manu your are an model!")
+    console.log("hye" + name + "hey manu your are an sucessful youtuber!")
 }
-habibi("rohan")
-habibi("manu")
+nice("harry")
+nice("manohar")
 
+function sum(a, b, c = 2) {
 
-
-console.log("hy manu ur good")
-console.log("hy manu ur tshirt is good")
-console.log("hy manu ur  learn good")
-console.log("hy manu ur nice")
-
-
-
-function sum(a, b, c = 3) {
     // console.log(a+b)
     return a + b + c
 }
-result1 = sum(3, 6)
-result2 = sum(37, 6)
-result3 = sum(3, 69,1)
+// sum(3,9)
 
-console.log("the sum of a and b is :", result1)
-console.log("the sum of a and b is :", result2)
-console.log("the sum of a and b is :", result3)
+result1 = sum(5, 46)
+result2 = sum(54, 4)
+result3 = sum(5, 7)
+
+console.log("the sum of these number is", result1)
+console.log("the sum of these number is", result2)
+console.log("the sum of these number is", result3)
 
 
-const func1 =(x) =>{
-
-    console.log("im a man",x)
+const fun = (x)=>{
+    console.log("this is the numebr",x)
 }
-func1(43);
+fun(44);
+
+// console.log("hey manu your are an developer")
+// console.log("hey manu your are an hacker")
+// console.log("hey manu your are an bussinuess man")
+// console.log("hey manu your are an model")
+// console.log("hey manu your are an sucessful youtuber")
+
